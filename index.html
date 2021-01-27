@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #00b7c2;
+      font-family: "Montserrat";
+    }
+    table{
+      table-layout: fixed;
+      border-spacing: 0.7rem;
+width: 100%;
+    }
+    .bg1{
+      z-index: -1;
+      position: absolute;
+      bottom: 10rem;
+      left: -30rem;
+      overflow:hidden;
+      transform: rotate(20deg);
+    }
+    .bg2{
+      z-index: -1;
+      position: absolute;
+      top: 10rem;
+      left: 30rem;
+      overflow:hidden;
+      transform: rotate(20deg);
+    }
+    .desc{
+
+      font-weight: 100;
+      font-size: 1.2rem;
+      margin-block-start: 0;
+margin-block-end: 0;
+    }
+    .profile-card{
+      display: block;
+      background-color: #fff;
+      margin: 8rem auto;
+      width: 23%;
+      text-align: center;
+      border-radius: 1rem;
+    }
+    .card-pattern{
+      width: -webkit-fill-available;
+      display: block;
+      border-top-left-radius: 1rem;
+      border-top-right-radius:1rem;
+    }
+    .victor{
+      border-radius: 100%;
+      position: relative;
+      bottom: 3.3rem;
+      border: 0.5rem #fff solid;
+    }
+    .desc{
+      position: relative;
+      bottom: 3.3rem;
+      line-height: 1.5;
+    }
+    .profile{
+        width: -webkit-fill-available;
+        font-family: "Montserrat";
+    }
+    th{
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    td{
+      font-weight: lighter;
+    }
+    @media (max-width: 1028px) and (min-width:500px){
+      .profile-card{
+        width: 45%;
+      }
+      .bg1{
+        top: 10rem;
+        left: -40rem;
+      }
+      .bg2{
+        top: 10rem;
+        left: 40rem;
+      }
+    }
+    @media (max-width: 500px){
+      .profile-card{
+        width: 80%;
+      }
+      .bg1{
+        bottom: 10rem;
+        left: -40rem;
+      }
+      .bg2{
+        bottom: 10rem;
+        left: 60rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!--
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos -->
+  <img class="bg1" src="bg-pattern-top.svg" alt="">
+  <img class="bg2" src="bg-pattern-bottom.svg" alt="">
+  <div class="profile-card">
+    <img class="card-pattern" src="bg-pattern-card.svg" alt="">
+
+    <img class="victor" src="image-victor.jpg" alt="">
+    <p class="desc"><strong>Victor Crest</strong> 26 <br /> London </h3>
+      <hr>
+    <table class="profile">
+      <thead>
+        <th>
+          80K
+        </th>
+        <th>
+          803K
+        </th>
+        <th>
+          1.4K
+        </th>
+      </thead>
+      <tr>
+        <td>
+            Followers
+        </td>
+        <td>
+            Likes
+        </td>
+        <td>
+            Photos
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">V Raja Karthik</a>.
+  </div>
+</body>
+</html>
